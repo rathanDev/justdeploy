@@ -1,0 +1,63 @@
+<mxfile host="Electron" modified="2024-12-07T11:26:23.790Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.13 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="1yEnSar75fat2gGfbsOa" version="24.4.13" type="device" pages="2">
+  <diagram name="Page-1" id="6_wmwT8tX2G0AVnGWSzB">
+    <mxGraphModel dx="1216" dy="1795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="h4C9AXublNJlHp0HwAy1-2" value="Docs&lt;div&gt;List of docs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-3" value="&lt;div&gt;Pats&lt;/div&gt;&lt;div&gt;List of pats&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-4" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="240" y="-120" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-5" value="" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="560" y="-120" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-7" value="tbDocInfo&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;id:&lt;br&gt;&lt;div&gt;Name:&lt;/div&gt;&lt;div&gt;Specialization:&lt;/div&gt;&lt;/div&gt;&lt;div&gt;paymentOptions&lt;br&gt;&lt;/div&gt;&lt;div&gt;createdDate&lt;/div&gt;&lt;div&gt;updatedDate&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="120" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-8" value="&lt;div&gt;tbPatInfo&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;id:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Name:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;dob:&lt;/div&gt;&lt;div&gt;Concern:&lt;/div&gt;&lt;div&gt;&lt;div&gt;createdDate&lt;/div&gt;&lt;div&gt;updatedDate&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="480" y="161" width="120" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-9" value="Available slots" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-10" value="08 09 10 11 12 13 14&lt;div&gt;14:00 - 16:00&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;15 16 17 18 19 20 21&lt;/div&gt;&lt;div&gt;15:00 - 16:00&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="201" y="440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-11" value="&lt;div&gt;tbAvailableDate&lt;/div&gt;id | docId | date" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="360" y="400" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-12" value="&lt;div&gt;tbAvailableSlot&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;id | docId | date | slot (15 min) | patId | availablityStatus&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="360" y="480" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-13" value="availablityStatuses&lt;div&gt;&lt;br&gt;&lt;div&gt;free&lt;/div&gt;&lt;div&gt;choosenByPat&amp;nbsp; &amp;nbsp;(&lt;span style=&quot;background-color: initial;&quot;&gt;reserved by pat - not confirmed - will be free after 5 mins&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;bookedByPat&amp;nbsp; (reserved by pat n confirmed)&lt;/div&gt;&lt;div&gt;cancelledByDoc (cancelled bcz doc needs to travel to visit a pat)&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="760" y="480" width="400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-14" value="&lt;div&gt;tbBooking&lt;/div&gt;id | rangeId | patId | bookingStatus | paymentStatus&lt;div&gt;&lt;br&gt;slotId -&amp;gt; availableSlotTb.id&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;reservedByPat comes here&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="360" y="720" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-15" value="bookingStatus&lt;div&gt;&lt;br&gt;&lt;div&gt;pendingConfirmationByDoc&lt;/div&gt;&lt;/div&gt;&lt;div&gt;confirmedByDoc&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Once confirmedByDoc pat should update the payment status by choosing one of the below with 24 hours&lt;/div&gt;&lt;div&gt;else make slot free again?&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="760" y="640" width="400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-16" value="paymentStatus&lt;div&gt;&lt;br&gt;&lt;div&gt;paid&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;(paid in advance)&lt;/div&gt;&lt;/div&gt;&lt;div&gt;payAtVisit&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="760" y="800" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h4C9AXublNJlHp0HwAy1-18" value="&lt;div&gt;tbRange&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;id | rangeId | slotId | patId&lt;div&gt;1&amp;nbsp; | 1&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;|&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="360" y="600" width="320" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="samVFxSJ5igM9H4tk1av" name="Page-2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
