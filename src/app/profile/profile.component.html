@@ -1,13 +1,35 @@
 <p>profile</p>
 
+<div>Type: {{ loggedInUser?.type }}</div>
 <div>Name: {{ loggedInUser?.name }}</div>
+<div>Address: {{ loggedInUser?.address }}</div>
+<div>Dob: {{ loggedInUser?.dob }}</div>
 
-<div *ngIf="loggedInUser?.type == 'doc'">Enter Availability</div>
+<p></p>
+<div>
+  <!-- <div *ngIf="loggedInUser?.type == 'doc'"> -->
+  Enter Availability <br />
+
+  <form [formGroup]="availabilityForm">
+    <textarea
+      id="av"
+      formControlName="av"
+      placeholder="2024-12-10from16:00:00to18:00:00"
+      rows="10"
+      cols="30"
+    ></textarea>
+    <br />
+    <button type="button" (click)="saveAvailability()">
+      Save Availability
+    </button>
+  </form>
+</div>
 
 <div *ngIf="!loggedInUser">
   <button routerLink="/login">Login</button> <br />
 </div>
 
+<p></p>
 <div>
   <button routerLink="/">Home</button>
 </div>
