@@ -1,6 +1,6 @@
 <p>login</p>
 
-<div class="login-container">
+<div *ngIf="!loggedIn" class="login-container">
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="email">Email: </label>
@@ -29,4 +29,9 @@
   </form>
 </div>
 
-<button (click)="logout()">Logout</button> <br /><br />
+<div *ngIf="loggedIn">
+  <button (click)="logout()">Logout</button> <br /><br />
+</div>
+
+<br />
+<button type="button" routerLink="/">Home</button> <br />

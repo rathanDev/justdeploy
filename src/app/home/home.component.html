@@ -2,15 +2,12 @@
 
 <div *ngIf="!loggedIn">
   <button type="button" routerLink="/login">Login</button> <br />
+  <button type="button" routerLink="/register">Create Account</button> <br />
 </div>
 
 <div *ngIf="loggedIn">
   <button type="button" (click)="logout()">Logout</button> <br />
 </div>
 
-<button type="button" routerLink="/register">Create Account</button> <br />
-<button type="button" routerLink="/createAccount">Dashboard</button> <br />
-
 <button type="button" routerLink="/doclist">Doc List</button> <br />
-<button type="button" routerLink="/">Home</button> <br /><br />
 <br />
