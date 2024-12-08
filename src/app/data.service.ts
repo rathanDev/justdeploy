@@ -11,4 +11,8 @@ export class DataService {
     this.registrationInfoList.push(info);
     console.log('list', this.registrationInfoList);
   }
+
+  public getAccounts() {
+    return this.registrationInfoList;
+  }
 }
