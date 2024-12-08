@@ -11,7 +11,7 @@ export class SharedService {
 
   constructor() {}
 
-  setUserLoggedIn(status: boolean) {
-    this.userLoggedInSubject.next(status);
+  setUserLoggedIn(loggedIn: boolean) {
+    this.userLoggedInSubject.next(loggedIn);
   }
 }

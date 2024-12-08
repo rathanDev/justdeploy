@@ -13,11 +13,11 @@
     </div>
 
     <div class="form-group">
-      <label for="password">Password: </label>
+      <label for="plainPassword">Password: </label>
       <input
-        id="password"
-        type="password"
-        formControlName="password"
+        id="plainPassword"
+        type="plainPassword"
+        formControlName="plainPassword"
         class="form-control"
       />
     </div>
@@ -27,6 +27,10 @@
       Login
     </button>
   </form>
+</div>
+
+<div *ngIf="!loggedIn">
+  <button type="button" routerLink="/register">CreateAccount</button>
 </div>
 
 <div *ngIf="loggedIn">

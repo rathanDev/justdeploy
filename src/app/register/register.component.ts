@@ -18,7 +18,7 @@ export class RegisterComponent {
       type: ['', [Validators.required]],
       name: ['', [Validators.required]],
       email: ['', [Validators.required]],
-      password: ['', [Validators.required]],
+      plainPassword: ['', [Validators.required]],
       address: ['', []],
       dob: ['', []],
     });

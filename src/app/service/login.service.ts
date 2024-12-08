@@ -50,6 +50,7 @@ export class LoginService {
   logout() {
     console.log('logout');
     localStorage.removeItem(ACCESS_TOKEN_KEY);
+    this.sharedService.setUserLoggedIn(false);
     this.redirector.toHome();
   }
 }

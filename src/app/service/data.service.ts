@@ -29,6 +29,7 @@ export class DataService {
   }
 
   public addAccount(info: RegistrationInfo) {
+    console.log('info', info);
     this.registrationInfoList.push(info);
     console.log('list', this.registrationInfoList);
   }

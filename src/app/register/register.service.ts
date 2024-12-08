@@ -25,6 +25,7 @@ export class RegisterService {
     console.log('mockRegister', info);
     const hashedPassword = this.hashService.hash(info.plainPassword);
     info.hashedPassword = hashedPassword;
+    info.plainPassword = '';
     this.dataService.addAccount(info);
     this.redirector.toLogin();
   }
