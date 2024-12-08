@@ -23,8 +23,8 @@ export class RegisterService {
 
   private mockRegister(info: RegistrationInfo) {
     console.log('mockRegister', info);
-    const hashedPassword = this.hashService.hash(info.password);
-    info.password = hashedPassword;
+    const hashedPassword = this.hashService.hash(info.plainPassword);
+    info.hashedPassword = hashedPassword;
     this.dataService.addAccount(info);
     this.redirector.toLogin();
   }

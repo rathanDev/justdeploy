@@ -3,16 +3,26 @@ export class RegistrationInfo {
 
   name: string;
   email: string;
-  password: string;
+  plainPassword: string;
+  hashedPassword: string;
   address: string;
   dob: Date;
 
-  constructor(t: string, n: string, e: string, p: string, a: string, d: Date) {
+  constructor(
+    t: string,
+    n: string,
+    e: string,
+    pp: string,
+    hp: string,
+    a: string,
+    d: Date
+  ) {
     this.type = t;
 
     this.name = n;
     this.email = e;
-    this.password = p;
+    this.plainPassword = pp;
+    this.hashedPassword = hp;
     this.address = a;
     this.dob = d;
   }
