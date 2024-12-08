@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ACCESS_TOKEN_KEY, LOGIN_URL } from '../constant';
 import { RedirectService } from '../redirect.service';
-import { Token } from './token';
+import { Token } from './token.model';
 import { UserCredentials } from './user-credentials';
 
 @Injectable({
