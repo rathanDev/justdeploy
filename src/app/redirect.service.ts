@@ -7,6 +7,11 @@ import { Router } from '@angular/router';
 export class RedirectService {
   constructor(private router: Router) {}
 
+  toHome() {
+    console.log('toHome');
+    this.router.navigate(['/']);
+  }
+
   toLogin() {
     console.log('toLogin');
     this.router.navigate(['/login']);
@@ -16,5 +21,4 @@ export class RedirectService {
     console.log('toProfile');
     this.router.navigate(['/profile']);
   }
-
 }
