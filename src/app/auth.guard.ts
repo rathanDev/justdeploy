@@ -7,7 +7,7 @@ import {
   RouterStateSnapshot,
 } from '@angular/router';
 import { ACCESS_TOKEN_KEY } from './constant';
-import { RedirectService } from './redirect.service';
+import { RedirectService } from './service/redirect.service';
 
 @Injectable({
   providedIn: 'root',

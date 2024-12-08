@@ -1,10 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { REGISTER_URL } from '../constant';
-import { DataService } from '../data.service';
-import { HashService } from '../hash.service';
+import { DataService } from '../service/data.service';
+import { HashService } from '../service/hash.service';
 import { RegistrationInfo } from '../model/registrationInfo.model';
-import { RedirectService } from '../redirect.service';
+import { RedirectService } from '../service/redirect.service';
 
 @Injectable({
   providedIn: 'root',

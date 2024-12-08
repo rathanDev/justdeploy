@@ -1,9 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ACCESS_TOKEN_KEY, LOGIN_URL } from '../constant';
-import { DataService } from '../data.service';
-import { HashService } from '../hash.service';
-import { RedirectService } from '../redirect.service';
+import { DataService } from '../service/data.service';
+import { HashService } from '../service/hash.service';
+import { RedirectService } from '../service/redirect.service';
 import { Token } from './token.model';
 import { UserCredentials } from './user-credentials';
 
