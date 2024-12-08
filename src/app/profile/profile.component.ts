@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Subscription } from 'rxjs';
+import { DateRange } from '../model/dateRange.model';
 import { RegistrationInfo } from '../model/registrationInfo.model';
 import { DataService } from '../service/data.service';
 import { SharedService } from '../service/shared.service';
@@ -42,33 +43,38 @@ export class ProfileComponent implements OnInit, OnDestroy {
 
   saveAvailability() {
     const text = this.availabilityForm.value.av;
-    const lines = text.split("\n");
+    const lines = text.split('\n');
+    const ranges: DateRange[] = [];
 
-    for(const line of lines) {
-      const dateRange = this.parseLine(line);
+    for (const line of lines) {
+      const dateRange: DateRange = this.parseLine(line);
       console.log(dateRange);
+      ranges.push(dateRange);
     }
 
+    
   }
 
-  parseLine(line: string): { from: Date; to: Date } | null {
-    const regex = /^(\d{4}-\d{2}-\d{2})from(\d{2}:\d{2}:\d{2})to(\d{2}:\d{2}:\d{2})$/;
+  parseLine(line: string): DateRange {
+    const regex =
+      /^(\d{4}-\d{2}-\d{2})from(\d{2}:\d{2}:\d{2})to(\d{2}:\d{2}:\d{2})$/;
     const match = line.match(regex);
 
-    if (match) {
-      const datePart = match[1];
-      const fromTime = match[2];
-      const toTime = match[3];
-
-      const from = new Date(`${datePart}T${fromTime}`);
-      const to = new Date(`${datePart}T${toTime}`);
-
-      if (!isNaN(from.getTime()) && !isNaN(to.getTime())) {
-        return { from, to };
-      }
+    if (!match) {
+      return DateRange.empty();
     }
 
-    return null; // Return null if the line doesn't match or is invalid
-  }
+    const datePart = match[1];
+    const fromTime = match[2];
+    const toTime = match[3];
 
+    const from = new Date(`${datePart}T${fromTime}`);
+    const to = new Date(`${datePart}T${toTime}`);
+
+    if (!isNaN(from.getTime()) || !isNaN(to.getTime())) {
+      return DateRange.empty();
+    }
+
+    return new DateRange(from, to);
+  }
 }
