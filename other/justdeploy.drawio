@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-12-08T09:10:48.492Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.13 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="NIc7KlxVFspumGp78nSK" version="24.4.13" type="device" pages="3">
+<mxfile host="Electron" modified="2024-12-08T09:57:08.949Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.4.13 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="48gFQnNI0l5LxS-uO9Fb" version="24.4.13" type="device" pages="3">
   <diagram name="design" id="6_wmwT8tX2G0AVnGWSzB">
-    <mxGraphModel dx="1674" dy="1936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="1936" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -87,6 +87,39 @@
         </mxCell>
         <mxCell id="eEEthNtGNiNtdjUINh8C-10" value="Logout" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="940" y="1680" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-11" value="doc-detail&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;doc1&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;name:&lt;/div&gt;&lt;div&gt;group:&lt;/div&gt;&lt;div&gt;availability: 2024-12-09,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;2024-&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;12-11,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2024-&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;12-13&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1640" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="1881" width="320" height="319" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-13" value="2024-12-09T16:00:00&lt;div&gt;2024-12-09T16:30:00&lt;/div&gt;&lt;div&gt;2024-12-09T17:00:00&lt;/div&gt;&lt;div&gt;2024-12-09T17:30:00&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="2050" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-14" value="Booking" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1900" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-15" value="Confirm and payAtVisit" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBorderColor=default;" vertex="1" parent="1">
+          <mxGeometry x="380" y="2125" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-16" value="Confirm and pay" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBorderColor=default;" vertex="1" parent="1">
+          <mxGeometry x="380" y="2155" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-17" value="docName" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1925" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-18" value="Book or LoginToBook" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBorderColor=default;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1808" width="137" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-20" value="Logout" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="577" y="1881" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-21" value="Login" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="577" y="1640" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="eEEthNtGNiNtdjUINh8C-22" value="&lt;font color=&quot;#00cc00&quot;&gt;2024-12-09&lt;/font&gt;&lt;div&gt;2024-12-11&lt;br&gt;&lt;/div&gt;&lt;div&gt;2024-12-13&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1970" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

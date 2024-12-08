@@ -18,6 +18,22 @@ const routes: Routes = [
       import('./profile/profile.module').then((m) => m.ProfileModule),
     canActivate: [AuthGuard],
   },
+  {
+    path: 'doclist',
+    loadChildren: () =>
+      import('./doclist/doclist.module').then((m) => m.DoclistModule),
+  },
+  {
+    path: 'docdetail',
+    loadChildren: () =>
+      import('./docdetail/docdetail.module').then((m) => m.DocdetailModule),
+  },
+  {
+    path: 'booking',
+    loadChildren: () =>
+      import('./booking/booking.module').then((m) => m.BookingModule),
+    canActivate: [AuthGuard],
+  },
 ];
 
 @NgModule({
