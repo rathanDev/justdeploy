@@ -26,7 +26,7 @@ export class RegisterService {
     const hashedPassword = this.hashService.hash(info.plainPassword);
     info.hashedPassword = hashedPassword;
     info.plainPassword = '';
-    this.dataService.addAccount(info);
+    this.dataService.addUserAccount(info);
     this.redirector.toLogin();
   }
 

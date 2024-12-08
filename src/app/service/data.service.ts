@@ -9,26 +9,41 @@ export class DataService {
   private registrationInfoList: RegistrationInfo[] = [];
 
   constructor(private hashService: HashService) {
-    this.initAccounts();
+    this.initUserAccounts();
   }
 
-  initAccounts() {
+  initUserAccounts() {
     console.log('initAccounts');
-    const plainPassword = 'aaa';
-    const hashedPassword = this.hashService.hash(plainPassword);
-    const info: RegistrationInfo = {
+    
+    const pp1 = 'ppp';
+    const hp1 = this.hashService.hash(pp1);
+    const patUser1: RegistrationInfo = {
       type: 'pat',
-      name: 'a',
-      email: 'a',
-      plainPassword: plainPassword,
-      hashedPassword: hashedPassword,
+      name: 'p',
+      email: 'p',
+      plainPassword: pp1,
+      hashedPassword: hp1,
       address: 'a',
       dob: new Date(),
     };
-    this.addAccount(info);
+    this.addUserAccount(patUser1);
+
+
+    const pp2 = 'ddd';
+    const hp2 = this.hashService.hash(pp2);
+    const docUser1: RegistrationInfo = {
+      type: 'doc',
+      name: 'd',
+      email: 'd',
+      plainPassword: pp2,
+      hashedPassword: hp2,
+      address: 'd',
+      dob: new Date(),
+    };
+    this.addUserAccount(docUser1);
   }
 
-  public addAccount(info: RegistrationInfo) {
+  public addUserAccount(info: RegistrationInfo) {
     console.log('info', info);
     this.registrationInfoList.push(info);
     console.log('list', this.registrationInfoList);

@@ -25,12 +25,16 @@ export class LoginService {
   }
 
   private mockLogin(cred: UserCredentials) {
-    const hashedPassword = this.hashService.hash(cred.password);
+    const hashedPassword = this.hashService.hash(cred.plainPassword);
     const list = this.dataService.getAccounts();
-    const account = list.filter(
+    const accounts = list.filter(
       (a) => a.email === cred.email && a.hashedPassword === hashedPassword
     );
-    console.log('acc', account);
+    console.log('acc', accounts);
+    if (accounts.length == 0) {
+      console.error("No user found");
+      return;
+    }
     localStorage.setItem(ACCESS_TOKEN_KEY, hashedPassword);
     this.sharedService.setUserLoggedIn(true);
   }
@@ -38,7 +42,7 @@ export class LoginService {
   private doLogin(cred: UserCredentials) {
     const validCred: UserCredentials = {
       email: 'john@mail.com',
-      password: 'changeme',
+      plainPassword: 'changeme',
     };
     this.http.post(LOGIN_URL, validCred).subscribe((data: any) => {
       const token = data as Token;
