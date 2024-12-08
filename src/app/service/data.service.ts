@@ -21,13 +21,12 @@ export class DataService {
       type: 'pat',
       name: 'p',
       email: 'p',
-      plainPassword: pp1,
+      plainPassword: '',
       hashedPassword: hp1,
       address: 'a',
       dob: new Date(),
     };
     this.addUserAccount(patUser1);
-
 
     const pp2 = 'ddd';
     const hp2 = this.hashService.hash(pp2);
@@ -35,7 +34,7 @@ export class DataService {
       type: 'doc',
       name: 'd',
       email: 'd',
-      plainPassword: pp2,
+      plainPassword: '',
       hashedPassword: hp2,
       address: 'd',
       dob: new Date(),

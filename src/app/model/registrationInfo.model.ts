@@ -26,4 +26,8 @@ export class RegistrationInfo {
     this.address = a;
     this.dob = d;
   }
+
+  static empty() {
+    return new RegistrationInfo('', '', '', '', '', '', new Date());
+  }
 }

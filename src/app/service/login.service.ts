@@ -1,12 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ACCESS_TOKEN_KEY, LOGIN_URL } from '../constant';
+import { Token } from '../login/token.model';
+import { UserCredentials } from '../login/user-credentials';
 import { DataService } from './data.service';
 import { HashService } from './hash.service';
 import { RedirectService } from './redirect.service';
 import { SharedService } from './shared.service';
-import { Token } from '../login/token.model';
-import { UserCredentials } from '../login/user-credentials';
 
 @Injectable({
   providedIn: 'root',
@@ -32,11 +32,12 @@ export class LoginService {
     );
     console.log('acc', accounts);
     if (accounts.length == 0) {
-      console.error("No user found");
+      console.error('No user found');
       return;
     }
     localStorage.setItem(ACCESS_TOKEN_KEY, hashedPassword);
     this.sharedService.setUserLoggedIn(true);
+    this.sharedService.setLoggedInUser(accounts[0]);
   }
 
   private doLogin(cred: UserCredentials) {

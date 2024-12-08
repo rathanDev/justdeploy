@@ -1,1 +1,13 @@
-<p>profile works!</p>
+<p>profile</p>
+
+<div>Name: {{ loggedInUser?.name }}</div>
+
+<div *ngIf="loggedInUser?.type == 'doc'">Enter Availability</div>
+
+<div *ngIf="!loggedInUser">
+  <button routerLink="/login">Login</button> <br />
+</div>
+
+<div>
+  <button routerLink="/">Home</button>
+</div>

@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     }
   }
 
-  onSubmit() {
+  onLoginSubmit() {
     const cred = this.loginForm.value;
     console.log('cred', cred);
     this.loginService.login(cred);
