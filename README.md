@@ -14,7 +14,7 @@ ng g m doclist --route doclist --module app.module
 ng g m docdetail --route docdetail --module app.module
 ng g m booking --route booking --module app.module
 
-
+npm install crypto-js
 
 
 
