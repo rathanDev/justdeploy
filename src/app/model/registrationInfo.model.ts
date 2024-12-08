@@ -1,4 +1,4 @@
-export class Register {
+export class RegistrationInfo {
   type: string; // Doc, Pat
 
   name: string;
